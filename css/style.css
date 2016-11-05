@@ -4,7 +4,6 @@ body{
     color: black;
     text-transform: uppercase;
     font-family: "PT Sans Narrow",Arial, sans-serif;
-    background-image: url(img\barbershop-shop.jpg);
 }
 
 h1{
@@ -17,15 +16,27 @@ h2{
     font-size: 24px;
     line-height:30px;
 }
+
+h3,
+.button,
+.price{
+    font-size: 14px;
+    line-height:18px;
+}
+
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
 
+.main-content{
+    margin:0;
+    padding:0;
+}
 .container {
     clear:both;
-    width: 940px;
+    width: 960px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -60,8 +71,7 @@ h2{
 }
 
 .breadcrumbs{
-    width: 100%;
-    min-height: 20px;
+/*outline: 1px solid blue;*/
 }
 
 .breadcrumbs-item{
@@ -88,11 +98,15 @@ h2{
     padding: 50px 0;
 }
 
+.product-item{
+  /*  outline: 1px solid blue;*/
+}
 
 .product-item-content {
     min-width: 960px;
     margin-bottom: 35px;
     padding: 50px 0;
+    /*outline: 1px solid red;*/
 }
 
 .index-content {
@@ -111,35 +125,43 @@ h2{
     width: 300px;
     min-height: 330px;
 }
-.filters-form{
+.filters-form {
     float: left;
     width: 240px;
     padding: 0;
 
 }
-.catalog{
+.catalog {
     float: right;
-    width:700px;
-}
-.product{
-    display:inline-block;
-    vertical-align: top;
-    width: 220px;
-    min-height: 288px;
-    margin-right: 10px;
+    font-size: 0;
+    width: 700px;
 }
 
-.product:nth-child(3n)
- {
+.product {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 220px;
+    min-height: 286px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.product:nth-child(3n) {
     margin-right: 0px;
 }
 
+.price-and-buy{
+     position: absolute;
+     bottom: 0;
+}
 .product-item-images {
     float: left;
     width: 480px;
-    min-height: 330px;
+    min-height: 668px;
     margin-right:60px;
 }
+
 .small-picture {
     float: left;
     width: 140px;
@@ -149,7 +171,7 @@ h2{
 
 .product-item-description {
     float: right;
-    width: 400px;
+    width: 390px;
     min-height: 670px;
     padding-top: 25px;
     padding-left: 10px;
@@ -167,7 +189,7 @@ h2{
 .vendor-code{
     float: right;
     width: 50%;
-}
+    text-align: right;
 .main-footer {
     margin-top: 65px;
     padding-top: 60px;

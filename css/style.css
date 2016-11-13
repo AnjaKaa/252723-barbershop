@@ -252,7 +252,7 @@ a.login:hover::before {
 .product-item-content {
     min-width: 960px;
     margin-bottom: 35px;
-    padding: 50px 0;
+    padding: 50px 0 0;
     /*outline: 1px solid red;*/
 }
 .product-item img{
@@ -265,9 +265,9 @@ a.login:hover::before {
 .item-content {
     margin-top: 0;
     padding-top: 60px;
-    padding-bottom: 65px;
     background: #f8f5f2 url("../img/background-item.jpg");
 }
+
 .index-content {
     margin-bottom: 35px;
     padding: 50px 80px;
